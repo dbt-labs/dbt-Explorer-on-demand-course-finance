@@ -1,4 +1,4 @@
-name: finance_dbt
+name: explorer_finance
 config-version: 2
 
 profile: snowflake
