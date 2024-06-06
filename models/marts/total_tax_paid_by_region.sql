@@ -1,11 +1,5 @@
-{{
-    config(
-        enabled=false
-    )
-}}
-
 with orders as (
-    select * from fct_orders
+    select * from {{ ref('explorer_platform', 'fct_orders') }}
 ),
 
 final as (
