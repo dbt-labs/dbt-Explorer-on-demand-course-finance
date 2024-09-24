@@ -1,5 +1,5 @@
 with orders as (
-    select * from {{ ref('explorer_platform', 'fct_orders') }}
+    select * from {{ ref('explorer_platform', 'fct_orders', v='2') }}
 ),
 
 agg as (
